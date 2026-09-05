@@ -1,0 +1,16 @@
+**/target/
+**/node_modules/
+**/.next/
+**/.npm-cache/
+backend/.m2repo/
+frontend/.npm-cache/
+.env
+.idea/
+*.log
+frontend/public/covers/flashpoint-*.jpg
+frontend/public/covers/road-to-flashpoint.jpg
+frontend/public/covers/anatomia-metahumano.jpg
+frontend/public/reader/page-2.jpg
+frontend/public/reader/page-3.jpg
+frontend/public/reader/page-4.jpg
+frontend/public/reader/page-5.jpg

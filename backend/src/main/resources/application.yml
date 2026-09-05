@@ -1,0 +1,23 @@
+spring:
+  datasource:
+    url: ${DB_URL:jdbc:postgresql://localhost:5432/panelium}
+    username: ${DB_USER:panelium}
+    password: ${DB_PASSWORD:panelium_dev}
+  jpa:
+    open-in-view: false
+    hibernate.ddl-auto: validate
+  servlet:
+    multipart:
+      max-file-size: 15MB
+      max-request-size: 200MB
+management.endpoints.web.exposure.include: health,info
+server.error.include-message: always
+panelium:
+  jwt-secret: ${JWT_SECRET:panelium-local-development-secret-change-me-2026}
+  admin-email: ${ADMIN_EMAIL:admin@panelium.local}
+  admin-password: ${ADMIN_PASSWORD:Admin123!}
+  storage:
+    endpoint: ${MINIO_ENDPOINT:http://localhost:9000}
+    access-key: ${MINIO_ACCESS_KEY:panelium}
+    secret-key: ${MINIO_SECRET_KEY:panelium_storage_dev}
+    bucket: ${MINIO_BUCKET:panelium}

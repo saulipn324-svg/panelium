@@ -62,4 +62,3 @@ Configura `PANELIUM_API_URL=http://localhost:8080` al ejecutar el frontend local
 La portada de **Neon Ronin** es un recurso original de demostración. Las portadas proporcionadas por el propietario del proyecto se usan únicamente en su biblioteca local y están excluidas de Git para evitar redistribuir material comercial.
 
 Consulta [Arquitectura](docs/ARCHITECTURE.md) y [API](docs/API.md).
-

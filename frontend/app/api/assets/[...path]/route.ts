@@ -1,0 +1,2 @@
+import {NextRequest,NextResponse} from "next/server";
+export async function GET(req:NextRequest,{params}:{params:Promise<{path:string[]}>}){const {path}=await params;const base=process.env.PANELIUM_API_URL??"http://localhost:8080";const upstream=await fetch(`${base}/api/assets/${path.join("/")}`,{cache:"force-cache"});return new NextResponse(upstream.body,{status:upstream.status,headers:{"content-type":upstream.headers.get("content-type")??"application/octet-stream","cache-control":"public, max-age=604800"}})}
